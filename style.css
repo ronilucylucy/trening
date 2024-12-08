@@ -1,0 +1,165 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+body{
+   font-size:  15px;
+   height: 100%;
+   font-family: "Lexend Deca";
+   
+  
+  }
+
+h2{
+font-family: "Big Shoulders Display";
+color: white;
+font-weight: 550;
+text-transform: uppercase;
+font-size: 35px;
+letter-spacing: 0.3px;
+}
+
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.grid{display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+
+
+}
+
+a{text-decoration: none;
+list-style: none;
+}
+
+.item1 a{color:hsl(31, 77%, 52%);
+background-color: white;
+border-radius: 20px;
+width: 120px;
+height: 40px;
+text-align: center;
+align-content: center;
+margin-top: 80px;
+
+
+
+}
+
+.item2 a{color:hsl(184, 100%, 22%);
+  background-color: white;
+  border-radius: 20px;
+  width: 120px;
+height: 40px;
+text-align: center;
+align-content: center;
+margin-top: 80px;
+  
+}
+
+  .item3 a{color:hsl(179, 100%, 13%);
+    background-color: white;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    margin-top: 80px;
+  
+  }
+
+
+ img{
+  padding-bottom: 20px;
+}
+
+ p{width: 170px;
+padding-top: 30px;}
+
+
+.item2 p{width: 170px;}
+.item3 p{width: 170px;}
+
+
+.item1{
+  background-color: hsl(31, 77%, 52%);
+  
+width: 250px;
+height: 450px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+display: grid;
+place-content: center;
+
+
+  
+  
+}
+
+
+.item2{
+  background-color: hsl(184, 100%, 22%);
+  width: 250px;
+height: 450px;
+display: grid;
+place-content: center;
+}
+
+.item3{
+  background-color: hsl(179, 100%, 13%);
+  width: 250px;
+height: 450px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+display: grid;
+place-content: center;
+}
